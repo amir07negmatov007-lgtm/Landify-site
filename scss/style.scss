@@ -13,7 +13,7 @@ body {
 }
 .top-section {
     min-height: 100vh;
-    background: url(/img/Background.jpg) no-repeat center / cover;
+    background: url(../img/Background.jpg) no-repeat center / cover;
     margin: 0px 0px 130px 0px;
 }
 .header {
@@ -216,7 +216,7 @@ body {
     position: relative;
     &:before {
         content: "";
-        background: url(/img/big\ quote.png) no-repeat center / contain;
+        background: url(../img/big\ quote.png) no-repeat center / contain;
         width: 11.34%;
         padding-top: 9.52%;
 
@@ -280,7 +280,7 @@ body {
 
     &:before {
         content: "";
-        background: url(/img/small\ quote.svg) no-repeat center/ contain;
+        background: url(../img/small\ quote.svg) no-repeat center/ contain;
         width: 16px;
         height: 14px;
         position: absolute;
