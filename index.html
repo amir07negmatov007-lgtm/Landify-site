@@ -17,19 +17,49 @@
                     <img src="img/Logo.svg" alt="logo" class="header__logo">
                     <span>Landify</span>
                 </div>
+
                 <ul class="header__nav">                    
-                    <a href="#!"><li class="header__item">About</li></a>
-                    <a href="#!"><li class="header__item">Products</li></a>
-                    <a href="#!"><li class="header__item">Pricing</li></a>
-                    <a href="#!"><li class="header__item">Blog</li></a>
-                    <a href="#!"><li class="header__item">Jobs</li></a>
-                    <li class="header__item">More >
-                        <ul class="header__list">
-                            <a href="#!"><li class="header__item">More</li></a>
-                            <a href="#!"><li class="header__item">More</li></a>
+                    <li><a class="header__item" href="#!">About</a></li>
+                    <li><a class="header__item" href="#!">Products</a></li>
+                    <li><a class="header__item" href="#!">Pricing</a></li>
+                    <li><a class="header__item" href="#!">Blog</a></li>
+                    <li><a class="header__item" href="#!">Jobs</a></li>
+                    <li>
+                        <a href="#!" class="header__item">More</a>
+                        <span class="header__sub-arrow arrow"></span>
+                        <ul class="header__sub-list">
+                            <li>
+                                <a href="" class="header__sub-link">Второй уровень</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__sub-link">Второй уровень</a>
+                                <ul class="sub-sub-list">
+                                    <li>
+                                        <a href="" class="sub-sub-list__link">Третий уровень</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-sub-list__link">Третий уровень</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-sub-list__link">Третий уровень</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-sub-list__link">Третий уровень</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="header__sub-link">Второй уровень</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__sub-link">Второй уровень</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="header__burger">
+                <span></span>
             </div>
             <div class="header__img-wrapper">
                 <a href="#" class="header__img-link">
@@ -238,8 +268,8 @@
                     <img src="img/Logo.svg" alt="">
                 </div>
             <div class="footer__download">
-                <p class="footer__text">Download now</p>
-                <p class="footer__text">License</p>
+                <a href="#!" class="footer__text">Download now</a>
+                <a href="#!" class="footer__text">License</a>
             </div>
             <ul class="footer__nav">
                 <li><a href="#!" class="footer__link">About</a></li>
@@ -260,6 +290,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
