@@ -99,7 +99,7 @@ a:active {
 .header__nav li {
   position: relative;
 }
-.header__nav li:hover .header__sub-list {
+.header__nav li.header__sub-list {
   display: block;
 }
 .header__nav a.parent {
@@ -116,7 +116,7 @@ a:active {
 .header__sub-list li {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.header__sub-list li:hover .sub-sub-list {
+.header__sub-list li.sub-sub-list {
   display: block;
 }
 
@@ -148,26 +148,64 @@ a:active {
 .arrow {
   display: none;
   position: absolute;
-  top: 10px;
   right: 0;
-  width: 0;
-  height: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 5;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -5px;
   border-top: 10px solid #000;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
+  transition: all 0.3s ease 0s;
+}
+.arrow.active::after {
+  transform: rotate(-180deg);
+}
+
+.header__sub-arrow:after {
+  border-left: 10px solid #fff;
+  border-right: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1.125rem;
 }
-body.mouse .header__nav > li:hover .header__sub-list {
+body.mouse .header__nav li:hover > .header__sub-list {
   display: block;
 }
-body.mouse .header__sub-list > li:hover .sub-sub-list {
+body.mouse .header__sub-list li:hover > .sub-sub-list {
+  display: block;
+}
+body.touch .header__sub-list.open {
+  display: block;
+}
+body.touch .sub-sub-list.open {
+  display: block;
+}
+body.touch .arrow {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .header__sub-link, .sub-sub-list {
+    font-size: calc(18px + 4 * (100vw - 320px) / 1120);
+    min-width: 10rem;
+    padding: 15px 0px 15px 5px;
+  }
+}
 .common__wrapper {
   max-width: 33.125rem;
   text-align: center;
