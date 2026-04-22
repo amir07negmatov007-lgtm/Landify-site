@@ -1,0 +1,112 @@
+.customers {
+    padding: 60px 0;
+    background: rgba(213, 250, 252, 0.7);
+
+    position: relative;
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+    }
+.customers .container {
+    position: relative;
+    &:before {
+        content: "";
+        background: url(../img/big-quote.png) no-repeat center / contain;
+        width: 11.34%;
+        padding-top: 9.52%;
+
+        position: absolute;
+        top: -4%;
+        left: 0;
+        z-index: -1;
+        @media (max-width: 768px) {
+        top: -2%;
+        left: 0;
+        }
+    }
+}
+.customers__wrapper {
+    text-align: left;
+    max-width: 29.063rem;
+    margin: 0;
+
+    position: relative;
+    z-index: 2;
+    @media (max-width: 600px) {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.customers__text {
+    margin: 0px 0px 1.38em 0px;
+}
+.customers__cards {
+    display: grid;
+    gap: 30px;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: ". airbnb"
+                        "hubspot airbnb"
+                        "hubspot bookmyshow"
+                        "hubspot .";
+    @media (max-width: 600px) {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.customers__item {
+    max-width: 21.875rem;
+    padding: 32px 32px 32px 64px;
+    background-color: $white;
+
+    &:nth-child(1) {
+        justify-self: end;
+        grid-area: hubspot;
+    }
+    &:nth-child(2) {
+        grid-area: airbnb;
+    }
+    &:nth-child(3) {
+        grid-area: bookmyshow;
+    }
+    @media (max-width: 600px) {
+        padding: 16px 16px 16px 32px;
+        max-width: 100%;
+    }
+}
+.customers__item_big {
+    max-width: 28.125rem;
+}
+.customers__img {
+    margin: 0px 0px 1.66em 0px;
+}
+.customers__item-text {
+    line-height: 1.7;
+    margin: 0px 0px 1.38em 0px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: url(../img/small-quote.svg) no-repeat center/ contain;
+        width: 16px;
+        height: 14px;
+        position: absolute;
+        top: -5%;
+        left: -10%;
+        @media (max-width: 600px) {
+            left: -6%;
+        }
+    }
+}
+.customers__item-title {
+    font-size: 1.125rem;
+}
+.customers__item-subtitle {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $gray;
+}

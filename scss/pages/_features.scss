@@ -1,0 +1,33 @@
+.features {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    margin: 0px 0px 3.25em 0px;
+}
+.features__wrapper {
+    max-width: 35.313rem;
+}
+.features__title {
+    font-weight: 800;
+    @include adaptiv-font(48,32);
+    line-height: 1.33;
+}
+.features__text {
+    @include adaptiv-font(18,16);
+    line-height: 1.78;
+    margin: 0px 0px 2.22em 0px;
+}
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+.features__item {
+    text-align: center;
+}

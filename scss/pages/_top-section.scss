@@ -1,0 +1,10 @@
+.top-section {
+    min-height: 100vh;
+    background: url(../img/bg.jpg) no-repeat center / cover;
+    margin: 0px 0px 6.5em 0px;
+
+    @media (max-width: 768px) {
+        margin: 0px 0px 3em 0px;
+        min-height: 80vh;
+    }
+}

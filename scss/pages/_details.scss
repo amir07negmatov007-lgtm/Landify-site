@@ -1,0 +1,39 @@
+.details {
+    padding: 60px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+}
+.details__wrapper {
+    max-width: 67.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+.details__title {
+    flex: 1 1 50%;
+}
+.details__text {
+    flex: 1 1 50%;
+}
+.details__img {
+    img {
+        max-width: 100%;
+    }
+}
+.details__item {
+}

@@ -1,0 +1,30 @@
+.logo-clouds {
+    margin: 0px 0px 1.5em 0px;
+}
+.logo-clouds__wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-top: 1px solid rgba(115, 115, 115, 0.3);
+    border-bottom: 1px solid rgba(115, 115, 115, 0.3);
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(40px,1fr));
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    @media (max-width: 500px) {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(40px,1fr));
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 15px 5px;
+    }
+}
+.logo-clouds__item {
+}
