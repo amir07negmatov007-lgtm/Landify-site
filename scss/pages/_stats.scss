@@ -115,6 +115,7 @@
     flex: 1 1 auto;
 }
 .headline__link {
+    padding: 2px;
     align-self: start;
     font-weight: 700;
     @include adaptiv-font(20,16);
@@ -131,5 +132,20 @@
         top: 50%;
         right: -30%;
         transform: translateY(-50%);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background-color: $purple;
+        transition: 0.3s;
+    }
+    &:hover:before {
+        content: "";
+        width: 100%;
+        left: 0;
     }
 }

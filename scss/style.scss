@@ -1,33 +1,27 @@
 // Abstracts
-@import "variables";
-@import "mixins";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 // Base
-@import "stylesnone";
-@import "typography";
-@import "common";
+@import "base/stylesnone";
+@import "base/typography";  
+@import "base/common";
 
 // Components
-@import "buttons";
-@import "cards";
-@import "arrows";
+@import "components/buttons";
+@import "components/cards";
+@import "components/arrows";
 
 // Layouts
-@import "header";
-@import "footer";
+@import "layouts/header";
+@import "layouts/footer";
 
 // Pages
-@import "top-section";
-@import "welcome";
-@import "logo-clouds";
-@import "features";
-@import "customers";
-@import "stats";
-@import "details";
-@import "download";
-
-// .customers, .stats , .details , .download  {
-//     @media (max-width: 768px) {
-//         padding: 40px 0;
-//     }
-// }
+@import "pages/top-section";
+@import "pages/welcome";
+@import "pages/logo-clouds";
+@import "pages/features";
+@import "pages/customers";
+@import "pages/stats";
+@import "pages/details";
+@import "pages/download";

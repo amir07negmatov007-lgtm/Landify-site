@@ -123,6 +123,21 @@
     }
 }
 .header__item {
+    &:before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $black;
+        position: absolute;
+        bottom: -6px;
+        right: 5%;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    &:hover:before {
+        width: 100%;
+        left: 0;
+    }
 }
 .header__list {
     display: none;
